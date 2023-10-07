@@ -16,8 +16,8 @@ const sora = Sora({
 
 const Layout = ({ children }) => {
   return (
-    <html lang="en">
-    <body className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
+  
+    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
 
 
       <TopLeftImg />
@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
       <Header/>
 
       {children}
-    </body>
-  </html>
+    </div>
+ 
 
   );
 };
