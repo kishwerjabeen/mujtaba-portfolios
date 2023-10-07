@@ -29,11 +29,11 @@ const Home = () => {
           </h1>
           {/* sub title */}
 
-          <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+          <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           </p>
 
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative ">
             <ProjectsBtn />
           </div>
         </div>
