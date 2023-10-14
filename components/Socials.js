@@ -13,7 +13,7 @@ import {
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
-      <Link href={'https://www.linkedin.com/in/mujtaba-asim-Designer/'}
+      <Link target="_blank"  href={'https://www.linkedin.com/in/mujtaba-asim-Designer/'}
         className="hover:text-accent transition-all duration-300">
         <RiLinkedinLine />
       </Link>
