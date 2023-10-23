@@ -1,3 +1,12 @@
+// imprt swiper Reat component 
+import {Swiper, SwiperSlide} from 'swiper/react'
+
+// import swper styles 
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
 // icons
 import {
   RxCrop,
@@ -5,8 +14,12 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
+  RxArrowTopRight,
 } from "react-icons/rx";
 
+
+// imprt required module 
+import {FreeMode, Pagination} from 'swiper'
 
 // data
 const serviceData = [
