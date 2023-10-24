@@ -1,8 +1,5 @@
-// icons
-import { IconName } from "react-icons/rx";
-
 //components
-import ServiceSlider from '../../components/ServiceSlider';
+import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb';
 import Circles from "../../components/Circles";
 
@@ -29,7 +26,7 @@ const Work = () => {
               animate="show"
               exit="hidden"
               className="h2 xl:mt-8">
-              My Services  <span className="text-accent">.</span>
+              My Work  <span className="text-accent">.</span>
             </motion.h2>
 
 
@@ -51,7 +48,7 @@ const Work = () => {
             animate="show"
             exit="hidden"
             className="w-full xl:max-w-[65%]">
-            <ServiceSlider />
+            <WorkSlider />
           </motion.div>
 
         </div>
