@@ -30,8 +30,12 @@ const Services = () => {
             </p>
 
           </div>
-          {/* Slider */}
-          <ServiceSlider />
+
+          <div className="w-full xl:max-w-[65%]">
+            {/* Slider */}
+            <ServiceSlider />
+          </div>
+
         </div>
       </div>
       <Bulb />
