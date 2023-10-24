@@ -1,5 +1,5 @@
 // imprt swiper Reat component 
-import {Swiper, SwiperSlide} from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // import swper styles 
 import 'swiper/css';
@@ -19,7 +19,7 @@ import {
 
 
 // imprt required module 
-import {FreeMode, Pagination} from 'swiper'
+import { FreeMode, Pagination } from 'swiper'
 
 // data
 const serviceData = [
@@ -51,7 +51,61 @@ const serviceData = [
 ];
 
 const ServiceSlider = () => {
-  return <div>Service Slider</div>;
+  return (
+    <Swiper breakpoints={{
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+    }}
+      FreeMode={true}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[FreeMode, Pagination]}
+      className='h-[240px] sm:h-[340px]'
+    >
+
+
+
+      {
+        serviceData.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+
+              <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer  hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+               
+                {/* icone */}
+                <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+
+                {/* title and descriptions */}
+                <div>
+                  <div>{item.title}</div>
+                  <p>{item.description}</p>
+                </div>
+
+
+
+                {/* arroww */}
+                <div className='text-3xl'>
+                  <RxArrowTopRight />
+                </div>
+              </div>
+            </SwiperSlide>
+          )
+        })
+      }
+
+
+
+    </Swiper >
+  );
 };
 
 export default ServiceSlider;
